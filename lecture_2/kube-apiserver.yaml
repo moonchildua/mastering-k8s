@@ -19,8 +19,8 @@ spec:
     - --token-auth-file=/etc/kubernetes/token.csv
     - --allow-privileged=true
     - --service-account-issuer=https://kubernetes.default.svc.cluster.local
-    - --service-account-key-file=/tmp/sa.pub
-    - --service-account-signing-key-file=/tmp/sa.key
+    - --service-account-key-file=/etc/kubernetes/sa.pub
+    - --service-account-signing-key-file=/etc/kubernetes/sa.key
     volumeMounts:
     - name: config
       mountPath: /etc/kubernetes
